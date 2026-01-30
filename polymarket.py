@@ -14,10 +14,9 @@ load_dotenv()
 DISCORD_WEBHOOK = os.getenv("DISCORD_WEBHOOK")
 
 TRADERS_TO_WATCH = [
-    "0x7a6192ea6815d3177e978dd3f8c38be5f575af24",   # Gambler
-    "0xdbade4c82fb72780a0db9a38f821d8671aba9c95",  # SwissMiss
-    "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",   # RN1
-    "0x5bffcf561bcae83af680ad600cb99f1184d6ffbe"    # YatSen
+    "0000000000000",   # xxxxxx
+    "111111111111111",  # xxxxxxx
+
 ]
 
 POLL_INTERVAL = 1  # secondes
@@ -190,4 +189,5 @@ async def main():
 if __name__ == "__main__":
     print("🚀 Polymarket Discord Trade Notifier lancé – liens prioritaires marché")
     asyncio.run(send_discord("✅ Bot lancé – liens vers marché (slug) prioritaires"))
+
     asyncio.run(main())
